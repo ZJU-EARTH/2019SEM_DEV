@@ -2,6 +2,6 @@
 This repository is meant for development management.
 
 ### /app.js 后端代码
-### /routes express路由代码
-### /public 网页静态文件（图片、css、js）
-### /views 模板渲染引擎html
+### /routes/ 路径下express路由代码
+### /public/ 路径下网页静态文件（./images/、./css/、./js/三个目录）
+### /views/ 路径下模板渲染引擎html
