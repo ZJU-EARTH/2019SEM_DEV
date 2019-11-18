@@ -5,6 +5,9 @@ import Course from "@/pages/Course.vue";
 import Homework from "@/pages/Homework.vue";
 import Login from "@/pages/Login.vue";
 import Sign from "@/pages/Sign.vue";
+import Hwinfo from "@/pages/Hwinfo.vue";
+import Courseinfo from "@/pages/Courseinfo.vue";
+import vedio from "@/pages/coursedetail/vedio.vue";
 const routes = [
   {
     path: "/",
@@ -35,6 +38,21 @@ const routes = [
         path: "sign",
         name: "注册",
         component: Sign
+      },
+      {
+        path: "hwinfo",
+        name: "作业详情",
+        component: Hwinfo
+      },
+      {
+        path: "courseinfo",
+        name: "课程",
+        component: Courseinfo
+      },
+      {
+        path: "courseinfo/vedio",
+        name: "课程",
+        component: vedio
       }
     ]
   }

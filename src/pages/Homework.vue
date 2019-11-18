@@ -12,7 +12,7 @@
             <h3>操作系统HW1</h3>
           </div>
           <div class="md-layout-item md-size-100 text-right">
-               <button type="button" class="md-button md-raised md-success md-theme-default">
+               <button type="button" class="md-button md-raised md-success md-theme-default" @click="info()">
               <div class="md-ripple">
                 <div class="md-button-content">查看详情</div>
               </div>
@@ -57,7 +57,11 @@ export default {
     };
   },
   methods:{
-
+    info(){
+      this.$router.push({
+        name: "作业详情"
+      });
+    }
     
   }
 };

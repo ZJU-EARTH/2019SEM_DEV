@@ -17,6 +17,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App";
+import VueMaterial from "vue-material";
+import "vue-material/dist/vue-material.min.css";
+import "vue-material/dist/theme/black-green-dark.css"; // This line here
 
 // router setup
 import routes from "./routes/routes";
@@ -30,6 +33,11 @@ import Notifications from "./components/NotificationPlugin";
 import MaterialDashboard from "./material-dashboard";
 
 import Chartist from "chartist";
+import store from "./store";
+
+//vedio
+import VueVideoPlayer from "vue-video-player";
+import "video.js/dist/video-js.css";
 
 // configure router
 const router = new VueRouter({
@@ -38,18 +46,21 @@ const router = new VueRouter({
 });
 
 Vue.prototype.$Chartist = Chartist;
-
+Vue.use(store);
 Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
 Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
+Vue.use(VueVideoPlayer);
+Vue.use(VueMaterial);
 
 /* eslint-disable no-new */
 new Vue({
   el: "#app",
   render: h => h(App),
   router,
+  store,
   data: {
     Chartist: Chartist
   }

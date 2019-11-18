@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div>
-      <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
+            <div class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100">
         <md-card>
           <md-card-header data-background-color="green">
             <h4 class="title">账户信息</h4>
@@ -10,30 +10,31 @@
             <md-table>
               <md-table-row>
                 <md-table-cell>姓名</md-table-cell>
-                <md-table-cell>杨佳妮</md-table-cell>
+                <md-table-cell></md-table-cell>
               </md-table-row>
 
               <md-table-row>
                 <md-table-cell>性别</md-table-cell>
-                <md-table-cell>女</md-table-cell>
+                <md-table-cell></md-table-cell>
               </md-table-row>
               <md-table-row>
                 <md-table-cell>学号</md-table-cell>
-                <md-table-cell>31701000000</md-table-cell>
+                <md-table-cell></md-table-cell>
               </md-table-row>
               <md-table-row>
                 <md-table-cell>邮箱</md-table-cell>
-                <md-table-cell>yangjiani233@outlook.com</md-table-cell>
+                <md-table-cell></md-table-cell>
               </md-table-row>
               <md-table-row>
                 <md-table-cell>专业</md-table-cell>
-                <md-table-cell>软件工程</md-table-cell>
+                <md-table-cell></md-table-cell>
               </md-table-row>
             </md-table>
           </md-card-content>
         </md-card>
       </div>
-    </div>
+
+     </div>
     <div></div>
     <div class="md-card md-card-plain md-theme-default">
       <div class="md-card-header" data-background-color="green">
